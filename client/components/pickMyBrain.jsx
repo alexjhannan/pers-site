@@ -16,6 +16,13 @@ export default PickMyBrain = React.createClass({
 
 		return unseenLinks;
 	},
+	componentDidUpdate() {
+		if (this.state.selected !== null) {
+			$(".pickMyBrain--thoughtBubble, .pickMyBrain--link").animate({opacity: 1});
+		} else {
+			$(".pickMyBrain--thoughtBubble").animate({opacity: 0});
+		}
+	},
 	render() {
 		if (this.state.selected !== null) {
 			return this.renderThinking();
@@ -37,9 +44,11 @@ export default PickMyBrain = React.createClass({
 		let link = this.props.links[this.state.selected];
 
 		return (
-			<div>
-				<div className="pickMyBrain--thoughtBubble"><a href={link.href}>{link.desc}</a></div>
-				<button onClick={closeBubble}>Click!</button>
+			<div className="pickMyBrain--container">
+				<img className="pickMyBrain--thoughtBubble" src={"/assets/pickMyBrain--thoughtBubble.svg"} />
+				<a className="pickMyBrain--link" href={link.href} target="_blank">{link.desc}</a>
+				<img className="pickMyBrain--brain" src={"/assets/pickMyBrain--brain.png"} onClick={closeBubble} />
+				<img className="pickMyBrain--sign" src={"/assets/pickMyBrain--sign.svg"} />
 			</div>
 		)
 	},
@@ -58,9 +67,10 @@ export default PickMyBrain = React.createClass({
 		}
 
 		return (
-			<div>	
-				<div className="pickMyBrain--thoughtBubble">There is no quote here.</div>
-				<button onClick={pickLink}>Click!</button>
+			<div className="pickMyBrain--container">	
+				<img className="pickMyBrain--thoughtBubble" src={"/assets/pickMyBrain--thoughtBubble.svg"} />
+				<img className="pickMyBrain--brain" src={"/assets/pickMyBrain--brain.png"} onClick={pickLink} />
+				<img className="pickMyBrain--sign" src={"/assets/pickMyBrain--sign.svg"} />
 			</div>
 		)
 	}

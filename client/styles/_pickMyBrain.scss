@@ -1,5 +1,32 @@
-.pickMyBrain--thoughtBubble {
-	background-color: blue;
-	width: 500px;
-	height: 300px;
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.pickMyBrain--container{
+	margin: 0 auto;
+	width: 50%;
+	position: relative;
+}
+
+.pickMyBrain--thoughtBubble{
+	display: block;
+	opacity: 0;
+}
+
+.pickMyBrain--link {
+	@extend .valign;
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	opacity: 0;
+	width: 200px;
+	text-align: center;
+}
+
+.pickMyBrain--brain {
+	cursor: pointer;
+	width: 107px;
+	height: 102px;
+	margin-right: 20px;
 }

@@ -4,10 +4,13 @@ import PickMyBrain from '/client/containers/pickMyBrain.jsx';
 let MainView = React.createClass({
 	render() {
 		return (
-			<div>
-				<h1 className="center">Main View</h1>
+			<div className="container">
 				<div className="row">
-					<div className="col s10 offset-s1 l4">
+					<div className="col s12 m6">
+						<img src={"/assets/intro--logo.png"} />
+					</div>
+					<div className="col s12 m6">
+						<div className="mainView--spacer hide-on-small-only"></div>
 						<PickMyBrain />
 					</div>
 				</div>

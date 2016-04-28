@@ -45,10 +45,12 @@ export default PickMyBrain = React.createClass({
 
 		return (
 			<div className="pickMyBrain--container">
-				<img className="pickMyBrain--thoughtBubble" src={"/assets/pickMyBrain--thoughtBubble.svg"} />
-				<a className="pickMyBrain--link" href={link.href} target="_blank">{link.desc}</a>
-				<img className="pickMyBrain--brain" src={"/assets/pickMyBrain--brain.png"} onClick={closeBubble} />
-				<img className="pickMyBrain--sign" src={"/assets/pickMyBrain--sign.svg"} />
+				<img className="pickMyBrain--brainAndSign" src={"/assets/pickMyBrain--brainAndSign.png"} onClick={closeBubble} />
+				<div className="pickMyBrain--thoughtBubble">
+					<div className="pickMyBrain--linkContainer">
+					<a className="pickMyBrain--linkText" href={link.href} target="_blank">{link.desc}</a>
+					</div>
+				</div>
 			</div>
 		)
 	},
@@ -68,9 +70,9 @@ export default PickMyBrain = React.createClass({
 
 		return (
 			<div className="pickMyBrain--container">	
-				<img className="pickMyBrain--thoughtBubble" src={"/assets/pickMyBrain--thoughtBubble.svg"} />
-				<img className="pickMyBrain--brain" src={"/assets/pickMyBrain--brain.png"} onClick={pickLink} />
-				<img className="pickMyBrain--sign" src={"/assets/pickMyBrain--sign.svg"} />
+				<img className="pickMyBrain--brainAndSign" src={"/assets/pickMyBrain--brainAndSign.png"} onClick={pickLink} />
+				<div className="pickMyBrain--thoughtBubble">
+				</div>
 			</div>
 		)
 	}

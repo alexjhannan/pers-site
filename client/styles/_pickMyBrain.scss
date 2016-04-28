@@ -1,33 +1,31 @@
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+.pickMyBrain--container{
+	margin: 0 auto 0;
+	width: 100%;
+	height: auto;
 }
 
-.pickMyBrain--container{
-	margin: 0 auto;
-	width: 300px;
+.pickMyBrain--brainAndSign {
+	width: 250px;
 	height: auto;
-	position: relative;
+	cursor:pointer;
 }
 
 .pickMyBrain--thoughtBubble{
-	display: block;
+	width: 250px;
+	height: 200px;
+	background: url("/assets/pickMyBrain--thoughtBubble.svg") no-repeat;
+	background-size: 250px 200px;
+	background-position: center;
+	position: relative;
 	opacity: 0;
+	top: -62px;
+	left: 10px;
 }
 
-.pickMyBrain--link {
-	@extend .valign;
-	position: absolute;
-	top: 50px;
-	left: 40px;
-	opacity: 0;
+.pickMyBrain--linkContainer {
 	width: 200px;
+	position: relative;
+	left: 25px;
+	top: 110px;
 	text-align: center;
-}
-
-.pickMyBrain--brain {
-	cursor: pointer;
-	width: 107px;
-	height: 102px;
-	margin-right: 20px;
 }

@@ -13,6 +13,7 @@ let MainView = React.createClass({
 					<div className="col s12 m6 l4">
 						<div className="mainView--spacer hide-on-small-only"></div>
 						<PickMyBrain />
+						<ResumeButton />
 					</div>
 				</div>
 			</div>

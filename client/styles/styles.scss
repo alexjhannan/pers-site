@@ -8,6 +8,11 @@ $accent-text: #07A1AD;
 	color: $accent-text;
 }
 
+.waves-effect.waves-accent {
+	background-color: $accent;
+}
+
 @import "pickMyBrain";
 @import "mainView";
 @import "intro";
+@import "resumeButton";

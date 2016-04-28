@@ -1,6 +1,7 @@
 import React from 'react';
 import PickMyBrain from '/client/containers/pickMyBrain.jsx';
 import Intro from '/client/components/intro.jsx';
+import SkillChart from '/client/components/skillChart.jsx';
 
 let MainView = React.createClass({
 	render() {
@@ -16,6 +17,7 @@ let MainView = React.createClass({
 						<ResumeButton />
 					</div>
 				</div>
+				<SkillChart />
 			</div>
 		);
 	}

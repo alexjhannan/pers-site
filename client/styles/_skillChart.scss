@@ -1,0 +1,32 @@
+.skillChart--container {
+	background-color: $accent;
+	color: white;
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	padding: 20px;
+	padding-bottom: 3px;
+	text-align: center;
+	.row {
+		margin-bottom: 10px;
+	}
+}
+
+.skillChart--header {
+	font-family: AmericanTypewriter-Bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0.36px;
+	margin: 0;
+}
+
+.skillChart--text {
+	margin-top: 5px;
+}
+
+.skillChart--divider {
+	border: 2px solid #FFF;
+	border-radius: 20px;
+	width: 80%;
+	margin: 0 auto 20px;
+}

@@ -1,5 +1,13 @@
 @import "{poetic:materialize-scss}/sass/components/_color.scss";
 @import "{poetic:materialize-scss}/sass/materialize.scss";
 
+$accent: #07939E;
+$accent-text: #07A1AD;
+
+.accentText {
+	color: $accent-text;
+}
+
 @import "pickMyBrain";
 @import "mainView";
+@import "intro";

@@ -6,7 +6,11 @@ let MainView = React.createClass({
 		return (
 			<div>
 				<h1 className="center">Main View</h1>
-				<PickMyBrain />
+				<div className="row">
+					<div className="col s10 offset-s1 l4">
+						<PickMyBrain />
+					</div>
+				</div>
 			</div>
 		);
 	}

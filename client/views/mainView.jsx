@@ -8,7 +8,6 @@ let MainView = React.createClass({
 			<div className="container">
 				<div className="row">
 					<div className="col s12 m6 l8">
-						<img src={"/assets/intro--logo.png"} />
 						<Intro />
 					</div>
 					<div className="col s12 m6 l4">

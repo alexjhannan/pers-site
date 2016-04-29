@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>LinkedIn Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MainView" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LinkedIn-Icon">
+            <rect id="Rectangle-11" fill="#07939E" x="0" y="0" width="256" height="256"></rect>
+            <text id="in" font-family="AmericanTypewriter, American Typewriter" font-size="150" font-weight="normal" letter-spacing="3.33333302" fill="#FFFFFF">
+                <tspan x="54.141667" y="187">in</tspan>
+            </text>
+            <text id="my" font-family="AmericanTypewriter, American Typewriter" font-size="36" font-weight="normal" letter-spacing="0.799999952" fill="#FFFFFF">
+                <tspan x="100.18789" y="57">my</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -12,6 +12,10 @@ $accent-text: #07A1AD;
 	background-color: $accent;
 }
 
+a {
+	color: $accent-text;
+}
+
 @import "mainView";
 @import "pickMyBrain";
 @import "intro";

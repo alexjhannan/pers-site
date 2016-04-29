@@ -3,6 +3,8 @@ import React from 'react';
 export default Intro = () => (
 	<div>
 		<img src={"/assets/intro--logo.png"} className="intro--logo" />
+		<a href="https://www.linkedin.com/in/alexjhannan"><img src={"/assets/intro--linkedInIcon.svg"} className="intro--icon" /></a>
+		<a href="https://www.github.com/alexjhannan"><img src={"/assets/intro--gitHubIcon.svg"} className="intro--icon" /></a>
 		<div className="intro--textBox">
 			<p className="center">Hi! My name is Alex, and <span className="accentText">I’m a self-taught developer</span> in NYC.</p> 
 			<p>A year ago, I was teaching <span className="accentText">calculus and physics</span> at a private high school. Disappointing career options had my eyes wandering towards other paths. The market is pushing towards tech, like it always has, and I have always been a techy at heart. It just made sense to make the switch.</p>

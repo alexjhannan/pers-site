@@ -48,7 +48,7 @@ export default PickMyBrain = React.createClass({
 				<img className="pickMyBrain--brainAndSign" src={"/assets/pickMyBrain--brainAndSign.png"} onClick={closeBubble} />
 				<div className="pickMyBrain--thoughtBubble">
 					<div className="pickMyBrain--linkContainer">
-					<a className="pickMyBrain--linkText" href={link.href} target="_blank">{link.desc}</a>
+					<a className="pickMyBrain--linkText" href={link.href}>{link.desc}</a>
 					</div>
 				</div>
 			</div>

@@ -1,23 +1,27 @@
 import React from 'react';
-import PickMyBrain from '/client/containers/pickMyBrain.jsx';
-import Intro from '/client/components/intro.jsx';
-import SkillChart from '/client/components/skillChart.jsx';
 
 let MainView = React.createClass({
 	render() {
 		return (
 			<div className="container">
 				<div className="row">
-					<div className="col s12 m6 l8">
+					<div className="col s12 l10 offset-l1">
 						<Intro />
 					</div>
-					<div className="col s12 m6 l4">
-						<div className="mainView--spacer hide-on-small-only"></div>
-						<PickMyBrain />
+				</div>
+				<div className="row">
+					<div className="col s6 m4 offset-m2 l4 offset-l2">
 						<ResumeButton />
 					</div>
+					<div className="col s6 m4 l4">
+						<PickMyBrain />
+					</div>
 				</div>
-				<SkillChart />
+				<div className="row">
+					<div className="col s12 l10 offset-l1">
+						<SkillChart />
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -8,7 +8,7 @@ const composerFxn = (props, onData) => {
 		{desc: "Prince Was Way Better At Guitar Than Everyone Else", href:"https://www.youtube.com/watch?v=6SFNW5F8K9Y"},
 		{desc: "The Kuhn Cycle of Scientific Revolutions", href:"http://www.thwink.org/sustain/glossary/KuhnCycle.htm"},
 		{desc: "Fixed and Growth Mindsets Shape Our Lives", href:"https://www.brainpickings.org/2014/01/29/carol-dweck-mindset/"},
-		{desc: "Frontend Masters: Web Workshops", href: "frontendmasters.com"},
+		{desc: "Frontend Masters: Web Workshops", href: "https://www.frontendmasters.com"},
 		{desc: "FunFunFunction: Functional JavaScript Video Series", href: "https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q"}
 	];
 

@@ -1,31 +1,35 @@
 .pickMyBrain--container{
 	margin: 0 auto 0;
-	width: 250px;
+	width: 178px;
 	height: 275px;
+	position: relative;
 }
 
 .pickMyBrain--brainAndSign {
 	width: 250px;
 	height: auto;
 	cursor: pointer;
+	z-index: 10;
+	position: relative;
 }
 
-.pickMyBrain--thoughtBubble{
-	width: 250px;
-	height: 200px;
-	background: url("/assets/pickMyBrain--thoughtBubble.svg") no-repeat;
-	background-size: 250px 200px;
-	background-position: center;
+.pickMyBrain--thoughtBubble {
 	position: relative;
+	top: -45px;
 	opacity: 0;
-	top: -62px;
-	left: 10px;
 }
 
 .pickMyBrain--linkContainer {
 	width: 200px;
 	position: relative;
-	left: 25px;
-	top: 110px;
+	left: 45px;
+	top: -175px;
 	text-align: center;
+}
+
+.pickMyBrain--thoughtBubbleArrow {
+	position: relative;
+	top: -180px;
+	left: 170px;
+	opacity: 0;
 }

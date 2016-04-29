@@ -27,9 +27,28 @@
 	text-align: center;
 }
 
+.pickMyBrain--linkText {
+	opacity: 0;
+}
+
 .pickMyBrain--thoughtBubbleArrow {
 	position: relative;
 	top: -180px;
 	left: 170px;
 	opacity: 0;
+}
+
+.pickMyBrain--thoughtBubblePathAnimated {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation-name: animateThoughtBubble;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(.43,-0.01,.01,.82);
+	animation-fill-mode: forwards;
+}
+
+@keyframes animateThoughtBubble {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

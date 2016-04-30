@@ -58,10 +58,25 @@
 	overflow: hidden;
 }
 
+#pickMyBrain--modalContent {
+	overflow: hidden;
+}
+
 #pickMyBrain--iframe {
 	border: none;
 }
 
-#pickMyBrain--modalContent {
-	overflow: hidden;
+.pickMyBrain--loadingSVG {
+	stroke-dasharray: 374;
+	stroke-dashoffset: 374;
+	animation-name: animateThoughtBubble;
+	animation-duration: 3s;
+	animation-timing-function: cubic-bezier(.43,-0.01,.01,.82);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.pickMyBrain--loadingSVGContainer {
+	position: relative;
+	top: 100px;
 }

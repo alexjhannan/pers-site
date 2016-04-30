@@ -12,7 +12,8 @@ const composerFxn = (props, onData) => {
 		{desc: "FunFunFunction: Some General Views on Coding", href: "https://www.youtube.com/embed/TbLvrszqi_8"},
 		{desc: "Kurt Vonnegut on the Shape of Stories", href: "https://www.youtube.com/embed/oP3c1h8v2ZQ"},
 		{desc: "Everything is a Remix Pt. 2", href: "https://www.youtube.com/embed/Z-HuenDPZw0"},
-		{desc: "Jimquisition: The Perfect Pasta Sauce", href: "https://www.youtube.com/embed/irZ-159xsZY"}
+		{desc: "Jimquisition: The Perfect Pasta Sauce", href: "https://www.youtube.com/embed/irZ-159xsZY"},
+		{desc: "Weasel vs. LHC Headliner Ends in Double TKO", href: "http://www.npr.org/sections/thetwo-way/2016/04/29/476154494/weasel-shuts-down-world-s-most-powerful-particle-collider"}
 	];
 
 	onData(null, {links});

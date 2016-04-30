@@ -26,7 +26,8 @@ export default PickMyBrain = React.createClass({
 
 			$('.modal-trigger').leanModal({ready: () => {
 					// inject content into iframe on modal open
-					$("#pickMyBrain--iframe").attr({src: "http://www.youtube.com/embed/6SFNW5F8K9Y", height: "335px", width: "600px"})
+					$("#pickMyBrain--iframe").attr({src: link.href});
+					// http://www.youtube.com/embed/6SFNW5F8K9Y
 				}, complete: () => {
 					// remove content from iframe on modal close
 					$("#pickMyBrain--iframe").attr("src", "");
@@ -65,17 +66,28 @@ export default PickMyBrain = React.createClass({
 					</svg>
 					<img className="pickMyBrain--thoughtBubbleArrow" src={"/assets/pickMyBrain--thoughtBubbleArrow.svg"} />
 					<div className="pickMyBrain--linkContainer">
-						<a className="pickMyBrain--linkText modal-trigger" href="#modal1" >{link.desc}</a>
+						<a className="pickMyBrain--linkText modal-trigger" href="#pickMyBrain--modal" >{link.desc}</a>
 					</div>
 				</div>
 
-				<div id="modal1" className="modal modal-fixed-footer">
-					<div className="modal-content center">
+				<div id="pickMyBrain--modal" className="modal modal-footer">
+					<div id="pickMyBrain--modalContent" className="modal-content center">
 						<h5 className="accentText">{link.desc}</h5>
-						<iframe id="pickMyBrain--iframe"></iframe>
+						<div className="row">
+							<div className="col s10 offset-s1">
+								<div className="video-container">
+									<iframe id="pickMyBrain--iframe"></iframe>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div className="modal-footer">
-						<a href="#!" className="modal-action modal-close waves-effect waves-light waves-accent btn-flat white-text">Close</a>
+					<div className="row">
+						<div className="col s6 center">
+							<button href="#!" className="modal-action modal-close waves-effect waves-light waves-accent btn-flat white-text">Close</button>
+						</div>
+						<div className="col s6 center">
+							<button href={link.href} target="_blank" className="modal-action modal-close waves-effect waves-light waves-accent btn-flat white-text">Open in New Tab</button>
+						</div>
 					</div>
 				</div>
 			</div>

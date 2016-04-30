@@ -26,8 +26,7 @@ export default PickMyBrain = React.createClass({
 
 			$('.modal-trigger').leanModal({ready: () => {
 					// inject content into iframe on modal open
-					$("#pickMyBrain--iframe").attr({src: link.href});
-					// http://www.youtube.com/embed/6SFNW5F8K9Y
+					$("#pickMyBrain--iframe").attr("src", link.href);
 				}, complete: () => {
 					// remove content from iframe on modal close
 					$("#pickMyBrain--iframe").attr("src", "");

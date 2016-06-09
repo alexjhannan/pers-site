@@ -1,4 +1,5 @@
 import React from 'react';
+import PalateCleanserLaunch from '/client/components/PalateCleanserLaunch.jsx';
 
 export default Intro = () => (
 	<div>
@@ -6,6 +7,7 @@ export default Intro = () => (
 		<a href="https://www.linkedin.com/in/alexjhannan"><img src={"/assets/intro--linkedInIcon.svg"} className="intro--icon" /></a>
 		<a href="https://www.github.com/alexjhannan"><img src={"/assets/intro--gitHubIcon.svg"} className="intro--icon" /></a>
 		<div className="intro--textBox">
+			<PalateCleanserLaunch />
 			<p className="center">Hi! My name is Alex, and <span className="accentText">I’m a self-taught developer</span> in NYC.</p>
 			<p>A year ago, I was teaching <span className="accentText">calculus</span> and <span className="accentText">physics</span> at a private high school. Disappointing career options had my eyes wandering towards other paths. The market is pushing towards tech, like it always has, and I have always been a techy at heart. It just made sense to make the switch.</p>
 			<p>I was a bit skeptical of the canned education that bootcamps were offering, and I was also pretty confident in managing an educational plan. <span className="accentText">So, I taught myself how to code.</span> It didn’t hurt that I studied physics in school and had already learned many of the underlying concepts. <span className="accentText">Before I knew it, I was building and deploying web applications by myself.</span> Nowadays, I play with design on top of the full stack, and am always looking for the next skill to add to my capabilities.</p>

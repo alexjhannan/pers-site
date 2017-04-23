@@ -1,5 +1,6 @@
 import React from 'react';
 
+// this is no longer in use
 export default PalateCleanserLaunch = () => (
   <div className="palateCleanserLaunch--container">
     <p className="palateCleanserLaunch--text">I just deployed my first Android application, written in React Native.</p>

@@ -2,11 +2,28 @@ import React from 'react';
 import PalateCleanserLaunch from '/client/components/PalateCleanserLaunch.jsx';
 
 export default Intro = () => (
-	<div>
-		<img src={"/assets/intro--logo.png"} className="intro--logo" />
-		<a href="https://www.linkedin.com/in/alexjhannan"><img src={"/assets/intro--linkedInIcon.svg"} className="intro--icon" /></a>
-		<a href="https://www.github.com/alexjhannan"><img src={"/assets/intro--gitHubIcon.svg"} className="intro--icon" /></a>
-		<div className="intro--textBox">
+	<div className="Intro">
+		<div className="Intro__topBar">
+			<div className="Intro__logoContainer">
+				<img
+					className="Intro__logo"
+					src={"/assets/Intro__logo.png"}
+				/>
+			</div>
+			<a href="https://www.github.com/alexjhannan" className="Intro__tab">
+				<img
+					className="Intro__tabImg"
+					src={"/assets/Intro__gitHubIcon.svg"}
+				/>
+			</a>
+			<a href="https://www.linkedin.com/in/alexjhannan" className="Intro__tab">
+				<img
+					className="Intro__tabImg"
+					src={"/assets/Intro__linkedInIcon.svg"}
+				/>
+			</a>
+		</div>
+		<div className="Intro__textBox">
 			<p className="center">Hi! My name is Alex, and <span className="accentText">I’m a self-taught developer</span> in NYC.</p>
 			<p>A year ago, I was teaching <span className="accentText">calculus</span> and <span className="accentText">physics</span> at a private high school. Disappointing career options had my eyes wandering towards other paths. The market is pushing towards tech, like it always has, and I have always been a techy at heart. It just made sense to make the switch.</p>
 			<p>I was a bit skeptical of the canned education that bootcamps were offering, and I was also pretty confident in managing an educational plan. <span className="accentText">So, I taught myself how to code.</span> It didn’t hurt that I studied physics in school and had already learned many of the underlying concepts. <span className="accentText">Before I knew it, I was building and deploying web applications by myself.</span> Nowadays, I play with design on top of the full stack, and am always looking for the next skill to add to my capabilities.</p>

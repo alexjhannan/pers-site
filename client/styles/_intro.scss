@@ -1,28 +1,47 @@
-.intro--textBox {
-	font-family: AmericanTypewriter;
-	font-size: 14px;
-	color: #000000;
-	letter-spacing: 0.63px;
-	border: 5px solid $accent;
-	border-radius: 20px;
-	margin-top: -5px;
-	padding: 10px 30px;
-	background: $white;
-}
+.Intro{
+	&__textBox {
+		font-family: AmericanTypewriter;
+		font-size: 14px;
+		color: #000000;
+		letter-spacing: 0.63px;
+		border: 4px solid $accent;
+		border-radius: 16px;
+		margin-top: -5px;
+		padding: 10px 30px;
+		background: $white;
+	}
 
-.intro--logo {
-	width: 250px;
-	margin-left: 20px;
-	height: auto;
-	margin-right: 20px;
-}
+	&__topBar {
+		display: flex;
+		flex-direction: row;
+		margin: 16px 0 4px;
+	}
 
-.intro--icon {
-	@extend .right;
-	height: 64px;
-	width: 64px;
-	margin-top: 16px;
-	margin-right: 25px;
-	margin-left: -15px;
-	border-radius: 20px 20px 0 0;
+	&__logoContainer {
+		width: 60%;
+		display: flex;
+	}
+
+	&__logo {
+		width: 100%;
+		height: auto;
+		align-self: flex-end;
+		margin-left: 8px;
+	}
+
+	&__tab {
+		align-self: flex-end;
+		width: 10%;
+		margin-right: 16px;
+		line-height: 0; // override anchor's inherent line padding
+
+		&:first-of-type {
+			margin-left: auto; // align tabs to the right
+		}
+	}
+
+	&__tabImg {
+		width: 100%;
+		border-radius: 8px 8px 0 0;
+	}
 }

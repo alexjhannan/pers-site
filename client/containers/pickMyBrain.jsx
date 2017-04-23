@@ -1,5 +1,5 @@
 import {compose} from 'react-komposer';
-import PickMyBrainComp from '/client/components/pickMyBrain.jsx';
+import PickMyBrainComp from '/client/components/PickMyBrain.jsx';
 
 const composerFxn = (props, onData) => {
 	let links = [

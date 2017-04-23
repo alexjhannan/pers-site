@@ -1,82 +1,85 @@
-.pickMyBrain--container{
-	margin: 0 auto 0;
-	width: 178px;
-	height: 275px;
+.PickMyBrain{
+	width: 330px;
+	height: 294px;
 	position: relative;
-}
 
-.pickMyBrain--brainAndSign {
-	width: 250px;
-	height: auto;
-	cursor: pointer;
-	z-index: 10;
-	position: relative;
-	outline: none;
-}
+	&__content {
+		transform: translateX(32px); // fix positioning of the content
+	}
 
-.pickMyBrain--thoughtBubble {
-	position: relative;
-	top: -45px;
-	opacity: 0;
-}
+	&__brainAndSign {
+		width: 250px;
+		height: auto;
+		cursor: pointer;
+		z-index: 10;
+		position: relative;
+		outline: none;
+	}
 
-.pickMyBrain--linkContainer {
-	width: 200px;
-	position: relative;
-	left: 45px;
-	top: -175px;
-	text-align: center;
-}
+	&__thoughtBubble {
+		position: relative;
+		top: -45px;
+		opacity: 0;
+	}
 
-.pickMyBrain--linkText {
-	opacity: 0;
-}
+	&__linkContainer {
+		width: 200px;
+		position: relative;
+		left: 45px;
+		top: -175px;
+		text-align: center;
+	}
 
-.pickMyBrain--thoughtBubbleArrow {
-	position: relative;
-	top: -180px;
-	left: 170px;
-	opacity: 0;
-}
+	&__linkText {
+		opacity: 0;
+	}
 
-.pickMyBrain--thoughtBubblePathAnimated {
-	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
-	animation-name: animateThoughtBubble;
-	animation-duration: 1s;
-	animation-timing-function: cubic-bezier(.43,-0.01,.01,.82);
-	animation-fill-mode: forwards;
-}
+	&__thoughtBubbleArrow {
+		position: relative;
+		top: -180px;
+		left: 170px;
+		opacity: 0;
+	}
 
-@keyframes animateThoughtBubble {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+	&__thoughtBubblePathAnimated {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation-name: animateThoughtBubble;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(.43,-0.01,.01,.82);
+		animation-fill-mode: forwards;
+	}
 
-#pickMyBrain--modal {
-	overflow: hidden;
-}
+	@keyframes animateThoughtBubble {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
 
-#pickMyBrain--modalContent {
-	overflow: hidden;
-}
+	&__modal {
+		overflow: hidden;
+	}
 
-#pickMyBrain--iframe {
-	border: none;
-}
+	&__modalContent {
+		overflow: hidden;
+	}
 
-.pickMyBrain--loadingSVG {
-	stroke-dasharray: 374;
-	stroke-dashoffset: 374;
-	animation-name: animateThoughtBubble;
-	animation-duration: 3s;
-	animation-timing-function: cubic-bezier(.43,-0.01,.01,.82);
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
+	&__iframe {
+		border: none;
+	}
 
-.pickMyBrain--loadingSVGContainer {
-	position: relative;
-	top: 100px;
+	&__loadingSVG {
+		stroke-dasharray: 374;
+		stroke-dashoffset: 374;
+		animation-name: animateThoughtBubble;
+		animation-duration: 3s;
+		animation-timing-function: cubic-bezier(.43,-0.01,.01,.82);
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	&__loadingSVGContainer {
+		position: relative;
+		top: 100px;
+	}
 }

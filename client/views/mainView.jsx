@@ -17,17 +17,15 @@ let MainView = React.createClass({
 	},
 	render() {
 		return (
-			<div className="container mainView--container">
-				<div className="row">
-					<div className="col s12 l10 offset-l1">
-						<Intro />
-					</div>
+			<div className="container">
+				<div className="col s12 l10 offset-l1">
+					<Intro />
 				</div>
-				<div className="row">
-					<div className="col s6 m4 offset-m2 l4 offset-l2">
+				<div className="mainView__miscRow">
+					<div className="mainView__miscOne">
 						<ResumeButton />
 					</div>
-					<div className="col s6 m4 l4">
+					<div className="mainView__miscTwo">
 						<PickMyBrain />
 					</div>
 				</div>

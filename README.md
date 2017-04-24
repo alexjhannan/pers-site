@@ -21,3 +21,4 @@ The containers don't really do anything. One injects static data? Lol. Obviously
 * Implement a blog
 * Allow user tracking w/ log in
 * Have the UI react to what blog posts the user has viewed
+* Figure out what the hell is so borked with styles. Every time I push to Heroku, it errors out, saying it can't find files (fix: renamed them), or can't find variables (fix: added common variables to the top of each file that uses em).

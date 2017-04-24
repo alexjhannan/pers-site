@@ -6,13 +6,13 @@ let MainView = React.createClass({
 	},
 	addVerticalOffset() {
 		let windowHeight = $(window).height();
-		let contentHeight = $(".mainView--container").height();
+		let contentHeight = $(".MainView--container").height();
 
 		if (windowHeight > contentHeight) {
 			let verticalOffset = (windowHeight - contentHeight) / 2.2 + "px";
-			$(".mainView--container").css("marginTop", verticalOffset);
+			$(".MainView--container").css("marginTop", verticalOffset);
 		} else {
-			$(".mainView--container").css("marginTop", 0);
+			$(".MainView--container").css("marginTop", 0);
 		}
 	},
 	render() {
@@ -21,11 +21,11 @@ let MainView = React.createClass({
 				<div className="col s12 l10 offset-l1">
 					<Intro />
 				</div>
-				<div className="mainView__miscRow">
-					<div className="mainView__miscOne">
+				<div className="MainView__miscRow">
+					<div className="MainView__miscOne">
 						<ResumeButton />
 					</div>
-					<div className="mainView__miscTwo">
+					<div className="MainView__miscTwo">
 						<PickMyBrain />
 					</div>
 				</div>

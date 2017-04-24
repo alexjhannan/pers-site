@@ -22,9 +22,9 @@ a {
 	color: $accent-text;
 }
 
-@import "_MainView";
-@import "_PickMyBrain";
-@import "_Intro";
-@import "_resumeButton";
-@import "_skillChart";
-@import "_palateCleanserLaunch";
+@import "mainView";
+@import "pickMyBrain";
+@import "intro";
+@import "resumeButton";
+@import "skillChart";
+@import "palateCleanserLaunch";
